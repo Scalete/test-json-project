@@ -1,0 +1,64 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    padding: 50px;
+    border: 1px solid lightblue;
+    border-radius: 40px;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: lightblue;
+    }
+
+    ul {
+        overflow-y: auto;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: 1px solid lightblue;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 20px;
+        color: lightblue;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .posts, .albums {
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 18px;
+        transition: background-color .2s, color .2s;
+    }
+
+    .posts {
+        border: 1px solid lightcoral;
+        color: lightcoral;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: lightcoral;
+            color: white;
+        }
+    }
+
+    .albums {
+        border: 1px solid lightgreen;
+        color: lightgreen;
+
+        &:hover {
+            background-color: lightgreen;
+            color: white;
+        }
+    }
+}

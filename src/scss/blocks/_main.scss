@@ -1,0 +1,22 @@
+.main-block {
+    color: lightblue;
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid lightblue;
+        text-align: center;
+        transition: background-color .2s, color .2s;
+
+        &:hover {
+            background-color: lightblue;
+            color: white;
+        }
+    }
+}
